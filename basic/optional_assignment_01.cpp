@@ -4,6 +4,8 @@
 int main()
 {
 	std::optional<double> d1{ 2.56 };
+	//std::optional d1{ 2.56 }; //ctad
+	
 	std::optional<double> d2{ 0.78 };
 	std::optional<int> i{ 40 };
 
@@ -20,5 +22,5 @@ int main()
 	d2 = {};
 
 	if (!d1 && !d2)
-	    std::cout << "her iki nesnenin de degeri yok\n";
+		std::cout << "her iki nesnenin de degeri yok\n";
 }
