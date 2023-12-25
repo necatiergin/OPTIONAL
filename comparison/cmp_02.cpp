@@ -1,14 +1,13 @@
 #include <optional>
 #include <iostream>
 
-using namespace std;
-
 int main()
 {
+	using namespace std;
 	optional<bool> oe{ nullopt };
-	optional<bool> ox{ false };
-	optional<bool> oy{ true };
-
+	
+	optional ox{ false };
+	optional oy{ true };
 
 	cout.setf(ios::boolalpha);
 
