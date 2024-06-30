@@ -15,4 +15,5 @@ int main()
 
 	std::optional<A> op1{ std::move(ax) };
 	std::optional<A> op2{ std::move(*op1) };
+	std::optional<A> op3{ std::move(op2) };
 }
