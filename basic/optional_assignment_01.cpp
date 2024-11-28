@@ -22,5 +22,5 @@ int main()
 	d2 = {};
 
 	if (!d1 && !d2)
-		std::cout << "her iki nesnenin de degeri yok\n";
+		std::cout << "both are empty\n";
 }
