@@ -14,9 +14,9 @@ int main()
 	op = nullopt;
 
 	try {
-		std::cout << op.value() << '\n';
+		cout << "value is :" << op.value() << '\n';
 	}
 	catch (const bad_optional_access& ex) {
-		cout << "hata yakalandi : " << ex.what();
+		cout << "exception caught : " << ex.what();
 	}
 }
