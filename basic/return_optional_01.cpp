@@ -2,7 +2,8 @@
 #include <string> 
 #include <iostream>
 
-// aldigi string'i int degere donusturecek - inte donusturemez ise deger dondurmeyecek
+// to_int function converts a std::string to int
+// if not possible returns no value (std::nullopt)
 
 std::optional<int> to_int(const std::string& s)
 {
@@ -17,7 +18,7 @@ std::optional<int> to_int(const std::string& s)
 
 std::optional<int> to_int2(const std::string& s)
 {
-	std::optional<int> ret; // deger tutmuyor
+	std::optional<int> ret; //ret is empty
 	try {
 		ret = std::stoi(s);
 	}
@@ -29,13 +30,12 @@ std::optional<int> to_int2(const std::string& s)
 int main()
 {
 	for (auto s : { "42", " 077", "necati", "0x33" }) {
-		// ogeleri int'e donusturup cikis akimina yazdiriyoruz:
 		std::optional<int> op = to_int(s);
 		if (op) {
-			std::cout << s << " yazisi int'e donusturuldu... deger : " << *op << "\n";
+			std::cout << s << " converted to int. value is : " << *op << '\n';
 		}
 		else {
-			std::cout << "(" << s << ") yazisi int'e donusturulemiyor\n";
+			std::cout << "(" << s << ") cannot be converted to int\n";
 		}
 	}
 }
