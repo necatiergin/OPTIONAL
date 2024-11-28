@@ -13,12 +13,11 @@ public:
 	}
 };
 
-
-
 int main()
 {
 	std::optional<Myclass> x;
-		for (int i = 0; i < 5; ++i) {
+	
+	for (int i = 0; i < 5; ++i) {
 		x.emplace();
 		//...
 	}
