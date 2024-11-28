@@ -4,7 +4,7 @@
 
 void display_e_mail(const std::optional<std::string>& op)
 {
-	std::cout << "e posta adresi : " << op.value_or("belirtilmemis") << '\n';
+	std::cout << "e-mail : " << op.value_or("not declared") << '\n';
 }
 
 int main()
