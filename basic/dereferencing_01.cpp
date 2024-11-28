@@ -4,16 +4,16 @@
 
 int main()
 {
-	using namespace std;
+	using namespace std::literals;
 
-	optional ostr = "necmettin"s;
+	std::optional ostr = "necmettin"s;
 
-	cout << *ostr << '\n';
-	cout << "length = " << ostr->length() << '\n';
+	std::cout << *ostr << '\n';
+	std::cout << "length = " << ostr->length() << '\n';
 	*ostr = "sadullah";
-	cout << *ostr << '\n';
+	std::cout << *ostr << '\n';
 
 	ostr = "remziye";
 
-	cout << *ostr << '\n';
+	std::cout << *ostr << '\n';
 }
