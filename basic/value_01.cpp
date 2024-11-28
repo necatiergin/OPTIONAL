@@ -10,8 +10,8 @@ int main()
 		std::cout << "ival = " << ival << '\n';
 	}
 	catch (const std::bad_optional_access& e)
-	//catch (const std::exception& e)
+		//catch (const std::exception& e)
 	{
-		std::cout << "hata yakalandi : " << e.what() << '\n';
+		std::cout << "exception caught: " << e.what() << '\n';
 	}
 }
