@@ -3,13 +3,8 @@
 
 int main()
 {
-	using namespace std;
-
-	string name{ "hasan" };
-
-	optional op = ref(name);
-
+	std::string name{ "hasan" };
+	std::optional op = ref(name);
 	op->get() += "can";
-
-	cout << "name = " << name << '\n';
+	std::cout << "name = " << name << '\n';
 }
