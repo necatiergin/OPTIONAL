@@ -23,12 +23,17 @@ int main()
 {
 	std::optional<UserName> op_name;
 
-	op_name.emplace("Necati Ergin");
-
-	op_name.emplace("Ali Serce"); //destructor cagrilacak
-	op_name.reset(); // destructor cagrilacak
-	op_name.emplace("Kaan Aslan"); //destructor cagrilacak
+	op_name.emplace("necati"); 
+	//constructor: necati
+	op_name.emplace("ali");  
+	//destructor: necati constructor: ali
+	op_name.reset(); //
+	// destructor : ali"
+	op_name.emplace("kaan"); 
+	//constructor: kaan
 	op_name = std::nullopt;
-	op_name.emplace("Oguz Karan");
-	op_name = UserName("Nuri Yilmaz");
+	// destructor: kaan
+	op_name.emplace("oguz");
+	//constructor: oguz
+	//destructor: oguz
 }
