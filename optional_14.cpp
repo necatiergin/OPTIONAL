@@ -25,13 +25,9 @@ public:
 
 };
 
-
-
 int main()
 {
-	using namespace std;
-
-	//optional<Myclass> x;
-	//optional<Myclass> y{ Myclass{} };
-	optional<Myclass> z{ in_place};
+	std::optional<Myclass> x;
+	std::optional<Myclass> y{ Myclass{} };
+	std::optional<Myclass> z{ std::in_place };
 }
