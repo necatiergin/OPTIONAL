@@ -2,7 +2,6 @@
 #include <iostream>
 #include <string>
 
-
 class UserRecord
 {
 public:
