@@ -4,13 +4,11 @@
 
 int main()
 {
-	using namespace std;
+	std::string str(100, 'A');
 
-	string str(100, 'A');
+	std::cout << "str.length() = " << str.length() << '\n';
 
-	cout << "str.length() = " << str.length() << '\n';
-
-	optional op = std::move(str);
-	cout << "op->length() = " << op->length() << '\n';
-	cout << "str.length() = " << str.length() << '\n';
+	std::optional op = move(str);
+	std::cout << "op->length() = " << op->length() << '\n';
+	std::cout << "str.length() = " << str.length() << '\n';
 }
