@@ -4,19 +4,17 @@
 
 int main()
 {
-	using namespace std;
+	std::optional<std::string> op{ "Selman Terzioglu" };
 
-	optional<string> op{ "Selman Terzioglu" };
-
-	cout << op.value() << '\n';
+	std::cout << op.value() << '\n';
 	op.value().assign(5, 'A');
-	cout << op.value() << '\n';
-	op = nullopt;
+	std::cout << op.value() << '\n';
+	op = std::nullopt;
 
 	try {
-		cout << "value is :" << op.value() << '\n';
+		std::cout << "value is :" << op.value() << '\n';
 	}
-	catch (const bad_optional_access& ex) {
-		cout << "exception caught : " << ex.what();
+	catch (const std::bad_optional_access & ex) {
+		std::cout << "exception caught : " << ex.what();
 	}
 }
