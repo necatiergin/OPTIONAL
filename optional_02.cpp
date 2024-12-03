@@ -1,3 +1,5 @@
+// optional sizeof
+
 #include <optional>
 #include <iostream>
 
@@ -10,4 +12,4 @@ int main()
 	cout << sizeof(optional<double>) << '\n';
 }
 
-// sample output: 2	 8 16
+// sample output: 2 8 16
