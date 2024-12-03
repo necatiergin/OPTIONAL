@@ -1,3 +1,5 @@
+// optional alignment
+
 #include <optional>
 #include <iostream>
 
