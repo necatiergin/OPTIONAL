@@ -3,7 +3,7 @@
 
 int main()
 {
-	std::optional<int> op1;  //empty durumda
+	std::optional<int> op1;  //empty 
 	std::optional op2{ 2 };
 	std::optional op3{ 3 };
 
