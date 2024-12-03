@@ -24,8 +24,6 @@ public:
 
 int main()
 {
-	using namespace std;
-
-	{optional<NoCopyNoMove> x(in_place); }
-	{optional<NoCopyNoMove> y(in_place, 34); }
+	{ std::optional<NoCopyNoMove> x(std::in_place); }
+	{ std::optional<NoCopyNoMove> y(std::in_place, 34); }
 }
