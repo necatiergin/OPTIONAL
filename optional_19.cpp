@@ -1,15 +1,16 @@
 #include <optional>
 #include <iostream>
 
-using namespace std;
 
 int main()
 {
+	using std::optional, std::cout, std::nullopt;
+
 	optional<int> oe;
 	optional<int> ox{ 10 };
 	optional<int> oy{ 20 };
 
-	cout.setf(ios::boolalpha);
+	cout.setf(std::ios::boolalpha);
 
 	cout << (oe == ox) << '\n'; //false
 	cout << (oe == nullopt) << '\n'; //true
