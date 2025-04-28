@@ -8,9 +8,9 @@ public:
 		std::cout << "default ctor\n";
 	}
 
-	~Myclass()
+	Myclass(int, int, int)
 	{
-		std::cout << "destructor\n";
+		std::cout << "Myclass(int, int, int)\n";
 	}
 
 	Myclass(const Myclass&)
@@ -28,6 +28,7 @@ public:
 int main()
 {
 	std::optional<Myclass> x;
-	std::optional<Myclass> y{ Myclass{} };
-	std::optional<Myclass> z{ std::in_place };
+	//std::optional<Myclass> y{ Myclass{} };
+	//std::optional<Myclass> z{ std::in_place };
+	//std::optional<Myclass> t{ std::in_place, 1, 3, 5 };
 }
