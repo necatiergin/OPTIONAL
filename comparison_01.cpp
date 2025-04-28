@@ -1,7 +1,6 @@
 #include <optional>
 #include <iostream>
 
-
 int main()
 {
 	using std::optional, std::cout, std::nullopt;
